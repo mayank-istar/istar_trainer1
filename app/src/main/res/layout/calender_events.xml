@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e24756"
+        android:layout_weight="0.03">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/frameLayout1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton5"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/calendar_screen_launch_istar_notes_close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:id="@+id/imageButton6"
+                android:background="@drawable/calendar_screen_launch_istar_notes_close"
+                android:layout_alignTop="@+id/imageButton7"
+                android:layout_toLeftOf="@+id/textView4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageButton4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="110dp"
+
+                android:foreground="@drawable/calendar_top_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignLeft="@+id/imageButton6"
+                android:layout_alignStart="@+id/imageButton6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Calendar"
+                android:id="@+id/textView4"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageButton3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:foreground="@drawable/home_top_menu"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/imageButton5"
+                android:layout_alignStart="@+id/imageButton5" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageButton7"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="280dp"
+                android:layout_alignTop="@+id/imageButton5"
+                android:layout_toRightOf="@+id/imageButton5"
+                android:layout_toEndOf="@+id/imageButton5"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/more_top_menu" />
+
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:id="@+id/frameLayout">
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="Events"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:minHeight="20dp"
+            android:textSize="30dp"
+            android:textColor="#060606" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="62dp"
+            android:layout_height="31dp"
+            android:text="Today"
+            android:id="@+id/button2"
+            android:background="@null"
+            android:layout_gravity="right|top"
+            android:layout_marginLeft="-20dp" />
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="81dp"
+            android:layout_height="29dp"
+            android:text="Monthly"
+            android:id="@+id/button3"
+            android:background="@null"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="-30dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:text="Weekly"
+            android:id="@+id/button"
+            android:background="@null"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="70dp" />
+
+
+    </FrameLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
