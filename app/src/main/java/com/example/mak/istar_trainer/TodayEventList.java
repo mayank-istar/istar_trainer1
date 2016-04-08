@@ -32,6 +32,9 @@ public class TodayEventList extends Activity{
                 "IIT Madras",
                 "IIT Roorkie",
                 "IIT Indore",
+                "IIT Bombay",
+                "IIT Kanpur",
+                "IIT Khadagpur",
                 "IIT BHU"
         };
 
@@ -43,18 +46,24 @@ public class TodayEventList extends Activity{
                 "UC Event",
                 "Android Event",
                 "VLC Event",
+                "Safari Event",
+                "Camera Event",
+                "Global Event",
                 "Cold Event"
         };
 
         String[] time ={
-                "9:00 am",
+                "09:00 am",
                 "10:00 am",
                 "11:00 am",
                 "12:00 pm",
-                "1:00 am",
-                "2:00 am",
-                "3:00 am",
-                "4:00 am"
+                "01:00 am",
+                "02:00 am",
+                "03:00 am",
+                "09:00 am",
+                "10:00 am",
+                "11:00 am",
+                "04:00 am"
         };
 
         // Define a new Adapter
